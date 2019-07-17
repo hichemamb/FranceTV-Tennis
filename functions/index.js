@@ -1,7 +1,7 @@
 process.env.FIREBASE_CONFIG = JSON.stringify({
    // databaseURL: 'https://databaseName.firebaseio.com',
    // storageBucket: 'projectId.appspot.com',
-   projectId: 'francetv-tennis'
+   projectId: 'francetv-uhccgd'
 });
 
 const functions = require('firebase-functions');
@@ -11,12 +11,12 @@ const {dialogflow, ImmersiveResponse} = require('actions-on-google');
 // console.log(firebaseConfig);
 const app = dialogflow({debug: true});
 
-app.intent('color', (conv) => {
+app.intent('playVideo', (conv) => {
    conv.ask(new ImmersiveResponse({
-      url: 'https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4',
+      url: 'https://francetv-uhccgd.firebaseapp.com',
    }));
    const ssml = '<speak>' +
-      'Une couleur rouge, verte, rose, marron, gris' +
+      'Très bien, je lance la vidéo' +
       '</speak>';
    conv.ask(ssml);
 });

@@ -16,33 +16,34 @@ limitations under the License.
 -->
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Interactive Canvas Sample</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Interactive Canvas Sample</title>
 
-  <!-- Disable favicon requests -->
-  <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+    <!-- Disable favicon requests -->
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
 
-  <!-- Load Assistant Canvas CSS and JavaScript -->
-  <link rel="stylesheet" href="https://www.gstatic.com/assistant/immersivecanvas/css/styles.css">
-  <script src="https://www.gstatic.com/assistant/immersivecanvas/js/immersive_canvas_api.js"></script>
+    <!-- Load Assistant Canvas CSS and JavaScript -->
+    <link rel="stylesheet" href="https://www.gstatic.com/assistant/immersivecanvas/css/styles.css">
+    <script src="https://www.gstatic.com/assistant/immersivecanvas/js/immersive_canvas_api.js"></script>
 
-  <!-- Load PixiJS for graphics rendering -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.7/pixi.min.js"></script>
+    <!-- Load PixiJS for graphics rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.7/pixi.min.js"></script>
 
-  <!-- Load Stats.js for fps monitoring -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <!-- Load Stats.js for fps monitoring -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
 
-  <!-- Load custom CSS -->
-  <link rel="stylesheet" href="css/main.css">
+    <!-- Load custom CSS -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<div id="view" class="view">
-  <div class="debug">
-    <div class="stats"></div>
-    <div class="logs"></div>
-  </div>
+
+<div class="tennis">
+    <video width="100%" height="100%" controls autoplay muted>
+        <source src="./assets/video.mp4" type="video/mp4">
+    </video>
 </div>
+
 <!-- Load custom JavaScript after elements are on page -->
 <script src="js/main.js"></script>
 <script src="js/log.js"></script>
