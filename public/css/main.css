@@ -1,5 +1,54 @@
+.welcome-splash {
+    width: 100vw;
+    height: calc(100vh - 130px);
+    background: url('../assets/splash.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.welcome-home {
+    width: 100vw;
+    height: calc(100vh - 130px);
+    background: url('../assets/home.jpg') no-repeat center center fixed;
+    background-size: 100%;
+    display: none;
+}
+
 .tennis {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 130px);
+    display:none;
 }
+
+.tennis-stats {
+    width: 70%;
+    height: calc(100vh - 130px);
+    background: url('../assets/s-stats.png') no-repeat;
+    background-size: 100%;
+}
+
+.video-container {
+    width: 30%;
+    height:140px;
+}
+
+
+.comment-micro {
+    width: 100vw;
+    height: calc(100vh - 130px);
+    background: url('../assets/comment.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: none;
+}
+
+.more-stats {
+    width: 100vw;
+    height: calc(100vh - 130px);
+    background: url('../assets/m-stats.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: none;
+}
+
 
